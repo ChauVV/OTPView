@@ -9,7 +9,7 @@ type Props = {
   index: number
   value: string
   onKeyPress: (idx: number, text: string) => void
-  setRef?: Function
+  setRef: Function
 }
 
 const OTPCell = (props: Props) => {

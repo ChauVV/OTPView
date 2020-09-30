@@ -60,7 +60,7 @@ const ListOTP = (props: Props) => {
     return (
       <OTPCell
         value={p}
-        setRef={(ref) => setFields([...fields, (fields[index] = ref)])}
+        setRef={(ref: any) => setFields([...fields, (fields[index] = ref)])}
         inputViewStyle={styles.otp}
         index={index}
         key={`${index}cell`}

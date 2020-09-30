@@ -19,7 +19,7 @@ type Props = {
 
 const InputOTP = (props: Props) => {
   const {navigation} = props
-  let tout = null
+  let tout: any = null
 
   const [isLoading, setLoading] = useState(false)
 
@@ -33,7 +33,7 @@ const InputOTP = (props: Props) => {
     navigation.replace('AuthenStack')
   }
 
-  const onSubmit = (code) => {
+  const onSubmit = (code: string) => {
     console.log('onSubmit: ', code)
     setLoading(true)
     tout = setTimeout(() => {
